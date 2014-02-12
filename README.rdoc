@@ -1,5 +1,9 @@
 = Rackspace Cloud Servers
 
+== Deprecation Notice
+
+This project is deprecated. New projects should use fog[https://github.com/fog/fog] instead.
+
 == Description
 
 This is a Ruby interface into the Rackspace[http://rackspacecloud.com/] {Cloud Servers}[http://www.rackspacecloud.com/cloud_hosting_products/servers] service. Cloud Servers from The Rackspace Cloud put you in complete control of your hosting infrastructure. Each Cloud Server is a fully-customizable, pay by the hour, virtualized Windows or Linux server instance that you launch, maintain, and control with full root access.
