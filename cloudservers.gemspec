@@ -9,6 +9,13 @@ Gem::Specification.new do |s|
   s.date = %q{2011-02-02}
   s.description = %q{A Ruby API to version 1.0 of the Rackspace Cloud Servers product.}
   s.email = %q{minter@lunenburg.org}
+  s.post_install_message = %Q{
+**** PLEASE NOTE **********************************************************************************************
+
+  #{s.name} has been deprecated. Please consider using fog (http://github.com/fog/fog) for all new projects.
+
+***************************************************************************************************************
+} if s.respond_to? :post_install_message
   s.extra_rdoc_files = [
     "README.rdoc",
     "TODO"
@@ -36,7 +43,7 @@ Gem::Specification.new do |s|
     "test/cloudservers_servers_test.rb",
     "test/test_helper.rb"
   ]
-  s.homepage = %q{https://github.com/rackspace/ruby-cloudservers}
+  s.homepage = %q{https://github.com/rackerlabs/ruby-cloudservers}
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
   s.summary = %q{Rackspace Cloud Servers Ruby API}
